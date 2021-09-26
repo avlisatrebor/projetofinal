@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Livraria Traça Livros</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-success">
+            <div>
+                <a class="navbar-brand text-white m-4" href="#livrariatracalivros">Livraria Traça Livros</a>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="#principal">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#quemsomos">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#clubetraca">Clube da Traça</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            background: linear-gradient(55deg,rgb(189, 14, 14), black,rgb(35, 156, 88) );
+        }
+    </style>
+    <section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/livraria01.jpg" class="d-block w-100" alt="Imagem responsiva">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/livraria02.jpg" class="d-block w-100" alt="Imagem responsiva">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/livraria03.jpg" class="d-block w-100" alt="Imagem responsiva">
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="container-fluid">
+        <section class="row mx-5 mt-3 p-3 mb-3 rounded">
+            <form action="#" method="get">
+                <h4 class="mb-3 text-white">Dados da Editora</h4>
+                <div class="col mb-3">
+                    <label for="nome" class="form-label text-white ">Nome da Editora</label>
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome da editora" required>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-6 col-sm-12 mb-3">
+                        <label for="email" class="form-label text-white">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="nome@dominio.com" required>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mb-3">
+                        <label for="telefone" class="form-label text-white">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" maxlength="11" placeholder="Somente números mais o DDD" required>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <label for="endereco" class="form-label text-white">Endereço</label>
+                    <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite o endereço" required>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <label for="end_numero" class="form-label text-white">Número</label>
+                        <input type="text" class="form-control" id="end_numero" name="end_numero" placeholder="Somente números" required>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <label for="bairro" class="form-label text-white">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro" required>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <label for="cidade" class="form-label text-white">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" required>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-6 col-sm-12 mb-3">
+                        <label for="estado" class="form-label text-white">Estado</label>
+                        <select class="form-select" id="estado" name="estado" required>
+                            <option selected>Selecione uma opção</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 mb-3">
+                        <label for="cep" class="form-label text-white">CEP</label>
+                        <input type="text" class="form-control" id="cep" name="cep" maxlength="8" placeholder="Somente números" required>
+                    </div>
+                </div>
+                <div align= "right">
+                <div class="col-lg-4 col-sm-12 mb-3">
+                    <input type="submit" value="Cadastrar" class="btn btn-outline-warning btn-lg">
+                </div> 
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container-fluid bg-success p-3">
+            <div class="row">
+                <div class="col-sm-12 text-white text-center">
+                    <h6 class="mb-0">Livraria Traça Livros&copy;2021</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/valida-form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+</body>
+</html>
