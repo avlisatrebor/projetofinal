@@ -55,11 +55,7 @@
     <main class="container-fluid">
         <section class="row mx-5 mt-3 p-3 mb-3 rounded">
             <form action="#" method="get">
-                <h4 class="mb-3 text-white">Dados da Editora</h4>
-                <div class="col mb-3">
-                    <label for="nome" class="form-label text-white ">Nome da Editora</label>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome da editora" required>
-                </div>
+                <h4 class="mb-3 text-white">Contato</h4>
                 <div class="row mb-3">
                     <div class="col-lg-6 col-sm-12 mb-3">
                         <label for="email" class="form-label text-white">E-mail</label>
@@ -74,11 +70,40 @@
                     <label for="endereco" class="form-label text-white">Endereço</label>
                     <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Digite o endereço" required>
                 </div>
-                <div align= "right">
-                <div class="col-lg-4 col-sm-12 mb-3">
-                    <input type="submit" value="Cadastrar" class="btn btn-outline-warning btn-lg">
-                </div> 
+                <h4 class="mb-3 text-white">Redes Sociais</h4>
+                <div class="row">
+                    <div class="coluna">
+                      <img src="img/facebook.png" alt="descrição da imagem" style="width:100%">
+                    </div>
+                    <div class="coluna">
+                      <img src="img/instagram.png" alt="descrição da imagem" style="width:100%">
+                    </div>
+                    <div class="coluna">
+                        <img src="img/linkedin.png" alt="descrição da imagem" style="width:100%">
+                      </div>
+                    <div class="coluna">
+                      <img src="img/twitter.png" alt="descrição da imagem" style="width:100%">
+                    </div>
+                    <div class="coluna">
+                        <img src="img/youtube.png" alt="descrição da imagem" style="width:100%">
+                      </div>
                 </div>
+                  
+                  <style>
+                  .coluna{
+                    float: left;
+                    width: 5%;
+                  .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                  }
+                  </style>
+                <div align= "right">
+                    <div class="col-lg-4 col-sm-12 mb-3">
+                        <input type="submit" value="Enviar" class="btn btn-outline-warning btn-lg">
+                    </div> 
+                    </div>
             </form>
         </section>
     </main>
